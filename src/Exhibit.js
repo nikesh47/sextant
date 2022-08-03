@@ -1,5 +1,5 @@
-import React,{Component} from "react";
-import "./Exhibit.css"
+import React, { Component } from 'react';
+import './Exhibit.css';
 
 class Exhibit extends Component {
     render() {
@@ -7,11 +7,10 @@ class Exhibit extends Component {
             <div className="Exhibit">
                 <h2 className="ExhibitHeading">{this.props.name}</h2>
                 <div className="ExhibitContent">
-                    {this.props.chidren}
+                    {this.props.children}
                 </div>
             </div>
         );
-        
     }
 }
 
