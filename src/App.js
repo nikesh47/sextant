@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
+import Pylon from './Pylon';
 import AddressDisplay from './AddressDisplay';
 
 class App extends Component {
@@ -14,6 +15,9 @@ class App extends Component {
                 </Exhibit>
                 <Exhibit name="Public IPv6 Address">
                     <AddressDisplay url='https://api64.ipify.org?format=json' />
+                </Exhibit>
+                <Exhibit name="Pylon Packet Latency">
+                    <Pylon />
                 </Exhibit>
             </div>
         );
